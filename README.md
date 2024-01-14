@@ -66,3 +66,22 @@ AlexAB's Github : https://github.com/AlexeyAB/darknet
     - train.txt 파일의 경로, 확장자를 지워 주자
     - notepad++를 사용하면 편하다.
 - testing 폴더도 진행해 주자. YOLO_v3\KITTI\testing>dir /b /s .\JPEGImages\*.png > test.txt
+
+
+## Windows 설정
+- Windows에서 Pytorch를 사용하려면 anaconda3를 통한 가상환경 설정을 해야 한다.
+    1. anaconda 홈페이지에서 anaconda 다운로드
+    2. 환경 변수 설정
+        - 시스템 속성 -> 고급 -> 환경 변수 -> Path
+            새로 만들기 : anaconda3\[Scripts] & [Library\bin]
+    3. cmd에 conda 입력, 설치 됐는지 확인
+    4. 가상 환경 생성
+        - conda create -n pytorch_py38 python=3.8
+    5. 가상 환경 실행
+        - conda activate pytorch_py38
+    6. 가상 환경 종료
+        - conda deactivate
+    ======anaconda 설치 완료======
+    7. Pytorch 설치
+        - pytorch 홈페이지 접속
+        - Stable, Windows, Conda, Python, CPU (ex. conda install pytorch torchvision torchaudio cpuonly -c pytorch << 가상환경 실행하고 쳐야함)
